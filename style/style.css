@@ -82,7 +82,7 @@ body {
 .banner-img {
     transform: translateX(88%);
     animation-name: animate;
-    animation-duration: 2s;
+    animation-duration: 1.2s;
     animation-direction: alternate;
     margin-top: -10%;
 }
@@ -95,4 +95,11 @@ body {
 .banner-info {
     margin-left: 5%;
     
+}
+.banner-info_title {
+    color: #FFF;
+    font-family:Inter;
+    font-size: 54px;
+    font-weight: 900;
+    padding-block: 20px;
 }
