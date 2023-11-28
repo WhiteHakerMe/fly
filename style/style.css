@@ -152,6 +152,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 214px;
+    margin-right: -50%;
 }
 
 .fundersecound-img {
@@ -162,13 +163,109 @@ body {
     background: #000122;
     box-shadow: 0px 0px 25.3px -8px #FFF;
 }
-.about-funder, .about-fundersecound {
+
+.about-funder {
     max-width: 495px;
     width: 100%;
     display: block;
     text-align: center;
 }
+
+.about-fundersecound {
+    max-width: 483px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
 .funder-info_title {
     margin-top: -20px;
     margin-bottom: 38px;
+    color: #FFF;
+    font-family: Tienne;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+    /* 166.667% */
+    letter-spacing: 0.96px;
+}
+
+.funderscound-info_title {
+    margin-bottom: 38px;
+    color: #FFF;
+    font-family: Tienne;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+    /* 166.667% */
+    letter-spacing: 0.96px;
+}
+
+.fundersecound-info_text {
+    color: #FFF;
+    text-align: center;
+    font-family: Tienne;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 28px;
+    /* 140% */
+    letter-spacing: 0.8px;
+}
+
+.funder-info_text {
+    color: #FFF;
+    text-align: center;
+    font-family: Tienne;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 28px;
+    /* 140% */
+    letter-spacing: 0.8px;
+}
+
+.fundersecound-image {
+    display: block;
+    text-align: center;
+}
+
+.about-academy {
+    margin-block: 13%;
+    display: flex;
+    flex-direction: column;
+    display: block;
+    text-align: center;
+}
+
+.academy-info_title {
+    margin-bottom: 20px;
+    color: #FFF;
+    text-align: center;
+    font-family: Tienne;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 28px;
+    /* 70% */
+    letter-spacing: 1.6px;
+}
+
+.academy-info {
+    max-width: 1278px;
+    width: 100%;
+}
+
+.academy-info_text {
+    color: #FFF;
+    text-align: center;
+    font-family: Tienne;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 36.5px;
+    /* 152.083% */
+    letter-spacing: 0.96px;
 }
