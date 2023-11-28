@@ -16,6 +16,7 @@ body {
     background: url("../img/bg-fon.png") center no-repeat;
     background: linear-gradient(255, 255, 255);
     background-size: cover;
+    position: relative;
 }
 
 .container {
@@ -35,7 +36,7 @@ body {
 .header-nav {
     display: flex;
     align-items: center;
-    column-gap: 302px;
+    column-gap: 32px;
 }
 
 .nav-content {
@@ -48,23 +49,33 @@ body {
     color: #FFF;
     font-family: Inter;
     font-size: 20px;
-    font-style: normal;
     font-weight: 900;
-    line-height: normal;
 }
 
 .header-Login {
     display: flex;
     align-items: center;
-    column-gap: 10px;
-    padding-right: -60%;
+    column-gap: 18px;
+    transform: translateX(392px);
 }
 
 .header-login_link {
     color: #FFF;
-    font-family: Inter;
+    font-family:Inter;
     font-size: 20px;
-    font-style: normal;
     font-weight: 900;
-    line-height: normal;
+}
+/* End Header style */
+.header-banner {
+    margin-top: 25%;
+    width: 100%;
+}
+.banner-container {
+    max-width: 1339px;
+    widows: 100%;
+    padding: 0 40px;
+}
+.banner-wrap {
+    display: flex;
+    align-items: center;
 }
