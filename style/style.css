@@ -16,7 +16,6 @@ body {
     background: url("../img/bg-fon.png") center no-repeat;
     background: linear-gradient(255, 255, 255);
     background-size: cover;
-    overflow: scroll;
 }
 
 .container {
@@ -90,6 +89,7 @@ body {
     animation-duration: 1.2s;
     animation-direction: alternate;
     margin-top: -5%;
+    margin-right: -2%;
 }
 
 @keyframes animate {
