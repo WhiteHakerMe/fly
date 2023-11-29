@@ -16,6 +16,7 @@ body {
     background: url("../img/bg-fon.png") center no-repeat;
     background-size: cover;
     background-color: #000122;
+    overflow-x: hidden;
 }
 
 .container {
@@ -23,7 +24,6 @@ body {
     width: 100%;
     padding: 0 20px;
     margin: 0 auto;
-
 }
 
 .content {
@@ -93,6 +93,7 @@ body {
     margin-right: -5%;
     object-fit: cover;
 }
+
 /* .banner-car-img  */
 
 @keyframes animate {
