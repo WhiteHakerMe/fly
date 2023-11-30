@@ -1,0 +1,13 @@
+@media only screen and (max-width: 1440px) {
+    .container {
+        max-width: 1440px;
+        width: 100%;
+        overflow-x: hidden;
+        object-fit: cover;
+    }
+
+    .banner-img,
+    .banner-car-img{
+        transform: translateX(1.4%);
+    }
+}

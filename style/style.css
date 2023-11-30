@@ -3,66 +3,69 @@
 * {
     padding: 0;
     margin: 0;
-    text-decoration: none;
+    text-decoration: none !important;
     box-sizing: border-box;
     list-style-type: none;
 }
 
 body {
-    max-width: 1440px;
-    /* max-height: 4096px; */
     width: 100%;
-    /* height: 100%; */
     background: url("../img/bg-fon.png") center no-repeat;
     background-size: cover;
-    background-color: #000122 !important;
-    overflow-x: hidden;
+    position: relative;
 }
 
-.content {
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 120%;
+    z-index: -1;
+    background: linear-gradient(180deg, #030025, #242146);
+    opacity: 0.7;
+}
+
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-wrapp {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-nav {
+
+.header-nav,
+.header-Login {
     display: flex;
-    align-items: center;
-    column-gap: 32px;
 }
 
-.nav-content {
-    display: flex;
-    align-items: center;
-    column-gap: 36px;
+.head-logo {
+    padding-left: 20px;
 }
 
-.nav_link {
+.nav_link,
+.header-login_link {
+    margin: 0 18px;
     color: #FFF;
     font-family: Inter;
     font-size: 20px;
+    font-style: normal;
     font-weight: 900;
-    transition: 0.5s;
+    line-height: normal;
 }
+
 .nav_link:hover {
     transform: scale(1.1);
     box-shadow: 0 0 16px 2px #404287;
     border-radius: 20%;
-}
-
-.header-Login {
-    display: flex;
-    align-items: center;
-    column-gap: 18px;
-    transform: translateX(392px);
-}
-
-.header-login_link {
-    color: #FFF;
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 900;
-    transition: 0.5s;
 }
 .header-login_link:hover {
     transform: scale(1.1);
@@ -70,46 +73,18 @@ body {
     border-radius: 20%;
 }
 
-/* End Header style */
 .header-banner {
-    margin-block: 25%;
-    width: 100%;
-
-}
-
-.banner-container {
-    max-width: 1339px;
-    widows: 100%;
-    padding: 0 40px;
+    padding-top: 307px;
 }
 
 .banner-wrap {
     display: flex;
-    align-items: center;
-}
-
-.banner-img {
-    width: 100%;
-    transform: translateX(80%);
-    animation-name: animate;
-    animation-duration: 1.2s;
-    animation-direction: alternate;
-    margin-top: -5%;
-    margin-right: -5%;
-    object-fit: cover;
-}
-
-/* .banner-car-img  */
-
-@keyframes animate {
-    0% {
-        transform: translateX(100%);
-    }
+    align-items: flex-start;
 }
 
 .banner-info {
-    margin-left: 5%;
-    margin-top: -20%;
+    width: 695px;
+    padding-left: 10px;
 }
 
 .banner-info_title {
@@ -120,12 +95,10 @@ body {
     font-weight: 400;
     line-height: 40.543%;
     /* 32.434px */
-    margin-block: 64px;
     letter-spacing: 3.2px;
 }
 
 .banner-info_text {
-    flex-shrink: 0;
     color: #FFF;
     font-family: Tienne;
     font-size: 24px;
@@ -134,13 +107,43 @@ body {
     line-height: 40px;
     /* 166.667% */
     letter-spacing: 0.96px;
+    padding-top: 54px;
 }
 
-/* End Header Banner */
+.banner-img,
+.banner-car-img {
+    padding-right: 0 !important;
+    transform: translateX(34.2%);
+    animation-name: animate;
+    animation-duration: 2.5s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(100%) scale(0.2);
+    }
+
+    25% {
+        transform: translateX(75%) scale(0.5);
+    }
+
+    50% {
+        transform: translateX(50%) scale(0.7);
+    }
+
+    75% {
+        transform: translateX(25%) scale(1);
+    }
+
+    100% {
+        transform: translateX(34.2%) scale(1.1);
+        overflow: hidden;
+    }
+}
+
 .about-title {
     display: flex;
     justify-content: center;
-    margin-right: -50%;
     color: #FFF;
     font-family: Inter;
     font-size: 48px;
@@ -151,7 +154,7 @@ body {
 
 .about {
     width: 100%;
-    margin-block: 10%;
+    padding-block: 10%;
 }
 
 .about-wrappr {
@@ -161,7 +164,6 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 214px;
-    margin-right: -50%;
 }
 
 .fundersecound-img {
@@ -279,16 +281,13 @@ body {
     letter-spacing: 0.96px;
 }
 
-/* End About Us */
 .courses {
-    margin-block: 10%;
     text-align: center;
 }
 
 .courses-title {
     display: block;
     text-align: center;
-    margin-right: -50%;
     color: #FFF;
     font-family: Inter;
     font-size: 48px;
@@ -381,7 +380,6 @@ body {
 .courses-wrappr {
     display: flex;
     flex-direction: column;
-    margin-left: 10%;
     display: block;
     text-align:start;
 }
