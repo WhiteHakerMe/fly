@@ -15,15 +15,8 @@ body {
     /* height: 100%; */
     background: url("../img/bg-fon.png") center no-repeat;
     background-size: cover;
-    background-color: #000122;
+    background-color: #000122 !important;
     overflow-x: hidden;
-}
-
-.container {
-    max-width: 1339px;
-    width: 100%;
-    padding: 0 20px;
-    margin: 0 auto;
 }
 
 .content {
