@@ -3,7 +3,6 @@
         max-width: 1440px;
         width: 100%;
         overflow-x: hidden;
-        object-fit: cover;
     }
 
     .banner-img,
