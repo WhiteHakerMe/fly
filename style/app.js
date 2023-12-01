@@ -25,3 +25,16 @@ let StudyPower2 = setInterval(function () {
     }
     document.getElementById("power3").innerHTML = power3;
 }, 100);
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementsByClassName("header-nav");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
