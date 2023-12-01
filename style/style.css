@@ -23,8 +23,8 @@ body::before {
     top: 0;
     height: 120%;
     z-index: -1;
-    background: linear-gradient(180deg, #030025, #242146);
-    opacity: 0.7;
+    background: linear-gradient(110deg, #030025, #030118);
+    opacity: 0.8;
 }
 
 
@@ -67,6 +67,7 @@ body::before {
     box-shadow: 0 0 16px 2px #404287;
     border-radius: 20%;
 }
+
 .header-login_link:hover {
     transform: scale(1.1);
     box-shadow: 0 0 26px 2px #404287;
@@ -136,7 +137,7 @@ body::before {
     }
 
     100% {
-        transform: translateX(34.2%) scale(1.1);
+        transform: translateX(34%);
         overflow: hidden;
     }
 }
@@ -154,7 +155,7 @@ body::before {
 
 .about {
     width: 100%;
-    padding-block: 10%;
+    padding-block: 122px;
 }
 
 .about-wrappr {
@@ -282,7 +283,7 @@ body::before {
 }
 
 .courses {
-    text-align: center;
+    transform: translateY(-120px);
 }
 
 .courses-title {
@@ -300,8 +301,7 @@ body::before {
     display: flex;
     align-items: center;
     column-gap: 50px;
-    margin-left: 20px;
-    margin-block: 71px;
+    padding-left: 82px;
 }
 
 .catalog-title {
@@ -362,10 +362,12 @@ body::before {
     /* 126.563% */
     letter-spacing: 1.28px;
 }
+
 .prices-submit {
     margin-block: 30px;
     transition: 0.5s;
 }
+
 .prices-submit:hover {
     transform: scale(1.1);
     border: 1px solid #040650;
@@ -373,13 +375,72 @@ body::before {
     box-shadow: inset 0 0 16px 2px #000122;
     border-radius: 20px;
 }
+
 .courses-info-prices {
     display: flex;
     flex-direction: column;
 }
+
 .courses-wrappr {
     display: flex;
+    row-gap: 64px;
     flex-direction: column;
-    display: block;
-    text-align:start;
+}
+
+/* End Courses */
+
+.news {
+    padding-top: 122px;
+    padding-left: 84px;
+}
+
+.news-title {
+    text-align: center;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.news-power {
+    padding-top: 64px;
+
+}
+.news-study {
+    width: 220px;
+}
+.news-power-icon {
+    padding: 15px 15px;
+    border-radius: 200px;
+    background: #000122;
+    box-shadow: 0px 0px 25.3px -8px #FFF;
+    width: 108px;
+    height: 107px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.news-power_title {
+    color: #FFF;
+    font-family: Tienne;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+    /* 125% */
+    letter-spacing: 1.28px;
+}
+
+.news-power-power {
+    text-align: center;
+    color: #FFF;
+    font-family: Tienne;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+    /* 125% */
+    letter-spacing: 1.28px;
 }
